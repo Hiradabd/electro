@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فروشگاه موتورهای کولر - قیمت و مشخصات فنی</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100;200;300;400;500;600;700;800;900&display=swap');
+        
+        body {
+            font-family: 'Vazirmatn', sans-serif;
+        }
+        
+        .brand-filter button.active {
+            background-color: #3b82f6;
+            color: white;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Top Bar -->
+    <div class="bg-blue-800 text-white py-2 px-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-4 space-x-reverse">
+                <div class="flex items-center">
+                    <i class="fas fa-phone-alt ml-2"></i>
+                    <span>021-12345678</span>
+                </div>
+                <div class="flex items-center">
+                    <i class="fas fa-envelope ml-2"></i>
+                    <span>info@coolermotor.com</span>
+                </div>
+            </div>
+            <div class="flex items-center space-x-4 space-x-reverse">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-telegram"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="bg-white shadow-md py-4">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <div class="flex items-center">
+                <img src="https://via.placeholder.com/50" alt="Logo" class="h-12">
+                <h1 class="text-xl font-bold mr-2">موتورهای کولر صنعتی</h1>
+            </div>
+            
+            <nav class="hidden md:flex space-x-8 space-x-reverse">
+                <a href="#" class="font-medium hover:text-blue-600">صفحه اصلی</a>
+                <a href="#" class="font-medium hover:text-blue-600">درباره ما</a>
+                <a href="#" class="font-medium hover:text-blue-600">تماس با ما</a>
+                <a href="#" class="font-medium hover:text-blue-600">وبلاگ</a>
+            </nav>
+            
+            <button class="md:hidden p-2 rounded-full bg-gray-100 hover:bg-gray-200">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-16">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-8 md:mb-0">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">بهترین موتورهای کولر با قیمت مناسب</h2>
+                <p class="text-lg mb-6">فروش انواع موتور کولر آبی و گازی با برندهای معتبر ایرانی و خارجی با گارانتی و خدمات پس از فروش</p>
+                <div class="flex space-x-4 space-x-reverse">
+                    <button class="bg-white text-blue-800 px-6 py-2 rounded font-medium hover:bg-gray-100">محصولات</button>
+                    <button class="border border-white px-6 py-2 rounded font-medium hover:bg-white hover:text-blue-800">تماس با ما</button>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <img src="https://via.placeholder.com/500x300" alt="Cooler Motors" class="rounded-lg shadow-xl">
+            </div>
+        </div>
+    </section>
+
+    <!-- Brands Section -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl font-bold text-center mb-8">برندهای معتبر</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
+                <div class="bg-gray-100 p-4 rounded-lg flex justify-center items-center h-24">
+                    <img src="https://via.placeholder.com/120x60" alt="Motogen" class="h-12">
+                </div>
+                <div class="bg-gray-100 p-4 rounded-lg flex justify-center items-center h-24">
+                    <img src="https://via.placeholder.com/120x60" alt="Pars Electric" class="h-12">
+                </div>
+                <div class="bg-gray-100 p-4 rounded-lg flex justify-center items-center h-24">
+                    <img src="https://via.placeholder.com/120x60" alt="Electropars" class="h-12">
+                </div>
+                <div class="bg-gray-100 p-4 rounded-lg flex justify-center items-center h-24">
+                    <img src="https://via.placeholder.com/120x60" alt="LG" class="h-12">
+                </div>
+                <div class="bg-gray-100 p-4 rounded-lg flex justify-center items-center h-24">
+                    <img src="https://via.placeholder.com/120x60" alt="Samsung" class="h-12">
+                </div>
+                <div class="bg-gray-100 p-4 rounded-lg flex justify-center items-center h-24">
+                    <img src="https://via.placeholder.com/120x60" alt="Gree" class="h-12">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="py-12 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center mb-8">
+                <h2 class="text-2xl font-bold">محصولات پرفروش</h2>
+                <a href="#" class="text-blue-600 hover:text-blue-800 flex items-center">
+                    مشاهده همه
+                    <i class="fas fa-chevron-left mr-2"></i>
+                </a>
+            </div>
+            
+            <!-- Brand Filters -->
+            <div class="brand-filter flex flex-wrap gap-2 mb-8">
+                <button class="px-4 py-2 rounded-full border border-gray-300 hover:bg-blue-100 active">همه</button>
+                <button class="px-4 py-2 rounded-full border border-gray-300 hover:bg-blue-100">موتوژن</button>
+                <button class="px-4 py-2 rounded-full border border-gray-300 hover:bg-blue-100">پارس الکتریک</button>
+                <button class="px-4 py-2 rounded-full border border-gray-300 hover:bg-blue-100">الکتروپارس</button>
+                <button class="px-4 py-2 rounded-full border border-gray-300 hover:bg-blue-100">الجی</button>
+                <button class="px-4 py-2 rounded-full border border-gray-300 hover:bg-blue-100">سامسونگ</button>
+            </div>
+            
+            <!-- Products Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                <!-- Product 1 -->
+                <div class="product-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
+                    <div class="relative">
+                        <img src="https://via.placeholder.com/300x200" alt="Product" class="w-full h-48 object-cover">
+                        <div class="absolute top-2 left-2 bg-red-500 text-white px-2 py-1 rounded text-xs">10% تخفیف</div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg mb-2">موتور کولر آبی موتوژن 1.5 اسب</h3>
+                        <div class="flex items-center mb-2">
+                            <i class="fas fa-star text-yellow-400 ml-1"></i>
+                            <span class="text-gray-700">4.8 (25 نظر)</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <span class="text-gray-500 line-through text-sm">3,200,000 تومان</span>
+                                <div class="text-blue-600 font-bold">2,880,000 تومان</div>
+                            </div>
+                            <button class="bg-blue-600 text-white p-2 rounded-full hover:bg-blue-700">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 2 -->
+                <div class="product-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
+                    <div class="relative">
+                        <img src="https://via.placeholder.com/300x200" alt="Product" class="w-full h-48 object-cover">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg mb-2">موتور کولر گازی پارس الکتریک 2 اسب</h3>
+                        <div class="flex items-center mb-2">
+                            <i class="fas fa-star text-yellow-400 ml-1"></i>
+                            <span class="text-gray-700">4.5 (18 نظر)</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <div class="text-blue-600 font-bold">4,500,000 تومان</div>
+                            </div>
+                            <button class="bg-blue-600 text-white p-2 rounded-full hover:bg-blue-700">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 3 -->
+                <div class="product-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
+                    <div class="relative">
+                        <img src="https://via.placeholder.com/300x200" alt="Product" class="w-full h-48 object-cover">
+                        <div class="absolute top-2 left-2 bg-red-500 text-white px-2 py-1 rounded text-xs">جدید</div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg mb-2">موتور کولر صنعتی الکتروپارس 3 اسب</h3>
+                        <div class="flex items-center mb-2">
+                            <i class="fas fa-star text-yellow-400 ml-1"></i>
+                            <span class="text-gray-700">4.9 (32 نظر)</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <div class="text-blue-600 font-bold">6,750,000 تومان</div>
+                            </div>
+                            <button class="bg-blue-600 text-white p-2 rounded-full hover:bg-blue-700">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 4 -->
+                <div class="product-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
+                    <div class="relative">
+                        <img src="https://via.placeholder.com/300x200" alt="Product" class="w-full h-48 object-cover">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg mb-2">موتور کولر گازی سامسونگ 1.5 اسب</h3>
+                        <div class="flex items-center mb-2">
+                            <i class="fas fa-star text-yellow-400 ml-1"></i>
+                            <span class="text-gray-700">4.7 (21 نظر)</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <span class="text-gray-500 line-through text-sm">5,200,000 تومان</span>
+                                <div class="text-blue-600 font-bold">4,680,000 تومان</div>
+                            </div>
+                            <button class="bg-blue-600 text-white p-2 rounded-full hover:bg-blue-700">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl font-bold text-center mb-8">چرا الکتروژن را انتخاب کنید؟</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center p-6 rounded-lg bg-gray-50">
+                    <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-lightbulb text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2">نوآوری و خلاقیت</h3>
+                    <p class="text-gray-600">ما با تکیه بر نوآوری و خلاقیت، محصولاتی با کیفیت و اثرگذار تولید می‌کنیم.</p>
+                </div>
+                <div class="text-center p-6 rounded-lg bg-gray-50">
+                    <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-cogs text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2">کیفیت برتر</h3>
+                    <p class="text-gray-600">تمامی محصولات ما با بالاترین استانداردهای کیفیت تولید می‌شوند.</p>
+                </div>
+                <div class="text-center p-6 rounded-lg bg-gray-50">
+                    <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-users text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2">پشتیبانی قوی</h3>
+                    <p class="text-gray-600">تیم پشتیبانی ما همواره آماده پاسخگویی به سوالات و نیازهای شماست.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="py-12 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center mb-8">
+                <h2 class="text-2xl font-bold">مقالات آموزشی</h2>
+                <a href="#" class="text-blue-600 hover:text-blue-800 flex items-center">
+                    مشاهده همه
+                    <i class="fas fa-chevron-left mr-2"></i>
+                </a>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="https://via.placeholder.com/400x250" alt="Blog" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <span class="text-blue-600 text-sm">تعمیر و نگهداری</span>
+                        <h3 class="font-bold text-lg my-2">نحوه سرویس موتور کولر آبی در فصل تابستان</h3>
+                        <p class="text-gray-600 mb-4">در این مقاله به بررسی روش های سرویس و نگهداری موتور کولر آبی می پردازیم تا در فصل گرما با مشکل مواجه نشوید.</p>
+                        <a href="#" class="text-blue-600 hover:text-blue-800 flex items-center">
+                            ادامه مطلب
+                            <i class="fas fa-chevron-left mr-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="https://via.placeholder.com/400x250" alt="Blog" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <span class="text-blue-600 text-sm">مقایسه محصولات</span>
+                        <h3 class="font-bold text-lg my-2">مقایسه موتورهای کولر آبی برندهای ایرانی و خارجی</h3>
+                        <p class="text-gray-600 mb-4">مقایسه کامل بین موتورهای کولر آبی برندهای ایرانی و خارجی از نظر کیفیت، قیمت و طول عمر مفید.</p>
+                        <a href="#" class="text-blue-600 hover:text-blue-800 flex items-center">
+                            ادامه مطلب
+                            <i class="fas fa-chevron-left mr-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="https://via.placeholder.com/400x250" alt="Blog" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <span class="text-blue-600 text-sm">نصب و راه اندازی</span>
+                        <h3 class="font-bold text-lg my-2">آموزش نصب موتور کولر گازی به صورت اصولی</h3>
+                        <p class="text-gray-600 mb-4">راهنمای کامل نصب موتور کولر گازی به همراه نکات فنی مهم برای افزایش طول عمر دستگاه.</p>
+                        <a href="#" class="text-blue-600 hover:text-blue-800 flex items-center">
+                            ادامه مطلب
+                            <i class="fas fa-chevron-left mr-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl font-bold text-center mb-8">نظرات مشتریان</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <img src="https://via.placeholder.com/50" alt="Customer" class="w-12 h-12 rounded-full">
+                        <div class="mr-3">
+                            <h4 class="font-bold">محمد رضایی</h4>
+                            <div class="flex">
+                                <i class="fas fa-star text-yellow-400 ml-1"></i>
+                                <i class="fas fa-star text-yellow-400 ml-1"></i>
+                                <i class="fas fa-star text-yellow-400 ml-1"></i>
+                                <i class="fas fa-star text-yellow-400 ml-1"></i>
+                                <i class="fas fa-star text-yellow-400 ml-1"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">موتور کولر موتوژن که خریدم واقعا کیفیت بالایی داره و بعد از 2 سال استفاده هنوز مثل روز اول کار میکنه. ممنون از پشتیبانی خوبتون</p>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <img src="https://via.placeholder.com/50" alt="Customer" class="w-12 h-12 rounded-full">
+                        <div class="mr-3">
+                            <h4 class="font-bold">فاطمه محمدی</h4>
+                            <div class="flex">
+                                <i class="fas fa-star text-yellow-400 ml-1"></i>
+                                <i class="fas fa-star text-yellow-400 ml-1"></i>
+                                <i class="fas fa-star text-yellow-400 ml-1"></i>
+                                <i class="fas fa-star text-yellow-400 ml-1"></i>
+                                <i class="fas fa-star text-yellow-400 ml-1"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">ارسال خیلی سریع بود و محصول دقیقا مطابق توضیحات سایت دریافت کردم. قیمت ها هم نسبت به بازار بسیار مناسب تر بود.</p>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <img src="https://via.placeholder.com/50" alt="Customer" class="w-12 h-12 rounded-full">
+                        <div class="mr-3">
+                            <h4 class="font-bold">علی کریمی</h4>
+                            <div class="flex">
+                                <i class="fas fa-star text-yellow-400 ml-1"></i>
+                                <i class="fas fa-star text-yellow-400 ml-1"></i>
+                                <i class="fas fa-star text-yellow-400 ml-1"></i>
+                                <i class="fas fa-star text-yellow-400 ml-1"></i>
+                                <i class="fas fa-star-half-alt text-yellow-400 ml-1"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">برای کارگاه صنعتی نیاز به موتور قوی داشتیم که با مشاوره خوب کارشناسان این سایت بهترین انتخاب رو انجام دادیم.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="py-12 bg-blue-800 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-2xl font-bold mb-4">عضویت در خبرنامه</h2>
+            <p class="mb-6 max-w-2xl mx-auto">با عضویت در خبرنامه از جدیدترین محصولات، تخفیف ها و مقالات آموزشی ما مطلع شوید.</p>
+            <div class="flex flex-col md:flex-row max-w-md mx-auto md:max-w-xl">
+                <input type="email" placeholder="آدرس ایمیل شما" class="px-4 py-3 rounded md:rounded-r-none mb-2 md:mb-0 text-gray-800 w-full">
+                <button class="bg-orange-500 hover:bg-orange-600 px-6 py-3 rounded md:rounded-l-none font-medium">عضویت</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-12 pb-6">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="font-bold text-lg mb-4">درباره ما</h3>
+                    <p class="text-gray-400 mb-4">فروشگاه تخصصی موتورهای کولر آبی و گازی با بیش از 15 سال سابقه در زمینه تأمین و توزیع محصولات با کیفیت.</p>
+                    <div class="flex space-x-4 space-x-reverse">
+                        <a href="#" class="bg-gray-700 hover:bg-gray-600 w-10 h-10 rounded-full flex items-center justify-center">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="bg-gray-700 hover:bg-gray-600 w-10 h-10 rounded-full flex items-center justify-center">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                        <a href="#" class="bg-gray-700 hover:bg-gray-600 w-10 h-10 rounded-full flex items-center justify-center">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="font-bold text-lg mb-4">لینک های سریع</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">صفحه اصلی</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">محصولات</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">درباره ما</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">تماس با ما</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">وبلاگ</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">سوالات متداول</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="font-bold text-lg mb-4">تماس با ما</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-center">
+                            <i class="fas fa-map-marker-alt ml-2 text-gray-400"></i>
+                            <span class="text-gray-400">تهران، خیابان آزادی، پلاک 123</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt ml-2 text-gray-400"></i>
+                            <span class="text-gray-400">021-12345678</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope ml-2 text-gray-400"></i>
+                            <span class="text-gray-400">info@coolermotor.com</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="font-bold text-lg mb-4">ساعات کاری</h3>
+                    <ul class="space-y-3">
+                        <li class="flex justify-between">
+                            <span class="text-gray-400">شنبه تا چهارشنبه:</span>
+                            <span>8:00 - 18:00</span>
+                        </li>
+                        <li class="flex justify-between">
+                            <span class="text-gray-400">پنجشنبه:</span>
+                            <span>8:00 - 14:00</span>
+                        </li>
+                        <li class="flex justify-between">
+                            <span class="text-gray-400">جمعه:</span>
+                            <span>تعطیل</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-6 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 mb-4 md:mb-0">© 2023 کلیه حقوق برای فروشگاه موتورهای کولر محفوظ است.</p>
+                <div class="flex space-x-6 space-x-reverse">
+                    <img src="https://via.placeholder.com/100x40" alt="Payment" class="h-10">
+                    <img src="https://via.placeholder.com/100x40" alt="Payment" class="h-10">
+                    <img src="https://via.placeholder.com/100x40" alt="Payment" class="h-10">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Brand filter functionality
+        const brandButtons = document.querySelectorAll('.brand-filter button');
+        brandButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                brandButtons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+                // Here you would normally filter products
+                // For this demo, we're just changing the button style
+            });
+        });
+        
+        // Mobile menu toggle (would need more implementation)
+        const mobileMenuButton = document.querySelector('header button.md\\:hidden');
+        mobileMenuButton.addEventListener('click', () => {
+            alert('منوی موبایل باز می‌شود - برای دمو این پیام نمایش داده می‌شود');
+        });
+    </script>
+</body>
+</html>
